@@ -1,5 +1,5 @@
 require('express-async-errors');
-const database = require('./database/sqlite')
+const database = require('./database/sqlite/index')
 
 const AppError = require('./utils/AppError');
 

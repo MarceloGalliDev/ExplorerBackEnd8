@@ -12,6 +12,4 @@ async function sqliteConnection(){
     
 }// configurações do banco de dados
 
-module.exports = {
-    sqliteConnection
-};
+module.exports = sqliteConnection;
