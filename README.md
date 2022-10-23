@@ -60,4 +60,13 @@ SQL Query Builder
         - É uma forma de versionamento da base de dados
             - métodos do migration
                 - UP = responsável por criar ou alterar algo no banco de dados
-                - DOWN = responsável pelo ROLLBACK, desfazer alterações realizadas pelo migration 
+                - DOWN = responsável pelo ROLLBACK, desfazer alterações realizadas pelo migration
+            - criando migration
+                - npx knex migrate:make createNotes
+            - rodando migration
+                - npx knex migrate:latest
+
+    - chave primary ou chave primaria
+        - identificador unico dentro da tabela
+    - chave foreing ou chave estrangeira 
+        - chave gerada dentro de outra tabela
