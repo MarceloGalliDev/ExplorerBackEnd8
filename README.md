@@ -70,3 +70,6 @@ SQL Query Builder
         - identificador unico dentro da tabela
     - chave foreing ou chave estrangeira 
         - chave gerada dentro de outra tabela
+    
+    - cardinalidade
+        - pé de galinha = um usuário pode ter multiplas ligações
