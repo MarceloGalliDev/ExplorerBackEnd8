@@ -9,3 +9,5 @@ routes.use('/users', usersRouter);
 routes.use('/notes', notesRouter);
 
 module.exports = routes;
+
+// quando chamar o /users será redirecionando para o usersRouter
