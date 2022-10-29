@@ -73,3 +73,8 @@ SQL Query Builder
     
     - cardinalidade
         - pé de galinha = um usuário pode ter multiplas ligações
+
+
+Insomnia
+    - Dentro do insomnia, quando eu passo um json como POST, eu estou passando uma informação dentro do body da requisição
+    - Dentro do insomnia, quando eu passo um dado dentro da url, estou passando uma informação dentro do params da requisição
