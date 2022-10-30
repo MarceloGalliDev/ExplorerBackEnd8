@@ -81,15 +81,15 @@ class NotesController {
 
         const userTags = await knex("tags"). where({ user_id }); //selecionado somente o conteudo de user_id
         const notesWithTags = notes.map(note => {
-            const noteTags = userTags.filter(tag => tag.note_id === note.id)
+            const noteTags = userTags.filter(tag => tag.note_id === note.id)//realizamos o map para percorrer o array notes, ja fazendo a busca na chave estrangeira de tags que é note_id combinando com id de note
 
             return {
-                ...note,,
+                ...note,
                 tags: noteTags
             }
         })
 
-        return response.json();
+        return response.json(notesWithTags);
     }
 
 };
