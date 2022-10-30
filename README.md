@@ -78,3 +78,58 @@ SQL Query Builder
 Insomnia
     - Dentro do insomnia, quando eu passo um json como POST, eu estou passando uma informação dentro do body da requisição
     - Dentro do insomnia, quando eu passo um dado dentro da url, estou passando uma informação dentro do params da requisição
+
+FUNÇÃO MAP
+    - Usado para percorrer cada elemento dentro de um array
+    - Devolve outro array
+    - Para cada elemento dentro do array, o map retorna um novo objeto
+     
+    - Exemplos:
+        const tags = [
+            {id: 1, name: "node", note_id: 1},
+            {id: 2, name: "express", note_id: 1},
+            {id: 3, name: "sqlite", note_id: 1},
+            {id: 4, name: "react", note_id: 2},
+            {id: 5, name: "javascript", note_id: 3},
+            {id: 6, name: "next", note_id: 4},
+        ];
+----------------------------------------------------------------
+        const newArray = tags.map(qualquerNomeParaVariavel => {
+            return {
+                name: tag.name
+            }
+        })
+    - Dentro do objeto eu retorno somente o name de cada elemento contido
+----------------------------------------------------------------
+        const newArray = tags.map(tag => tag)
+    - Aqui estou retornando todo conteudo contido em cada elemento dentro do array
+----------------------------------------------------------------
+        const newArray = tags.map(tag => tag.name)
+    - Aqui estou retornando um array simples somente com os nomes que esta contido dentro do array (["node", "express"...])
+----------------------------------------------------------------
+        const newArray = tags.map(tag => {
+            return {
+                ...tag,
+                date: new Date()
+            }
+        }
+    - Aqui estamos adicionando mais um conteudo dentro de cada objeto contido no array
+    - Percorremos cada item e acrescentando a data atual
+----------------------------------------------------------------
+
+FUNÇÃO FILTER
+    - Usado para filtrar objetos de dentro de um array
+    - Retorna um novo array, so que filtrado
+
+    - Exemplos:
+        const tags = [
+            {id: 1, name: "node", note_id: 1},
+            {id: 2, name: "express", note_id: 1},
+            {id: 3, name: "sqlite", note_id: 1},
+            {id: 4, name: "react", note_id: 2},
+            {id: 5, name: "javascript", note_id: 3},
+            {id: 6, name: "next", note_id: 4},
+        ];
+----------------------------------------------------------------
+        const newArray = tags.filter(tag => tag.note_id = 1);
+    - Aqui estamos retornando um novo array com objetos que tenha o conteúdo do note_id === 1
