@@ -26,4 +26,7 @@
                                 - delete
                                 - select
                                 - update
-                    
+
+2.PASSO
+    - Criar controllers de authenticated
+    - Criar SessionsController para realizar o controle de sessão de autenticação
