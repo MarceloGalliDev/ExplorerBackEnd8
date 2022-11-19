@@ -133,3 +133,7 @@ FUNÇÃO FILTER
 ----------------------------------------------------------------
         const newArray = tags.filter(tag => tag.note_id = 1);
     - Aqui estamos retornando um novo array com objetos que tenha o conteúdo do note_id === 1
+
+----------------------------------------------------------------
+FUNÇÃO resolve(__dirname, "..", "tmp");
+    - Usado para resolver o caminho do path da past, usamos __dirname para diretório e "..", para subir um nível na pasta, "tmp" é o nome da pasta que eu busco
