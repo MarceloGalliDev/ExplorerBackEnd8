@@ -24,6 +24,8 @@ function ensureAuthenticated(request, response, next) {
     }
 }
 
+module.exports = ensureAuthenticated;
+
 //middlewares sempre recebe um next, para chamar a proxima função destino da requisição
 //const authHeader = request.header.authorization; o token vai estar aqui dentro do cabeçalho da requisição
 /*exemplo do array authHeader[], "Bare xxxxx", usamos o split para cortar no espaço entre a palavra e o token, o importante para nós é somente o token
