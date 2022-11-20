@@ -30,3 +30,11 @@
 2.PASSO
     - Criar controllers de authenticated
     - Criar SessionsController para realizar o controle de sessão de autenticação
+
+3.PASSO
+    - criação de middleware
+    - teste de authenticated e criação de arquivo de configs/auth
+
+4.PASSO
+    - criação de tmp para upload de arquivos
+    - criação dos providers
