@@ -140,3 +140,9 @@ FUNÇÃO resolve(__dirname, "..", "tmp");
 
 INSTANCIANDO uma nova classe
     - Quando vamos utilizar uma nova classe como objeto é necessário instanciarmos na renderização com um operador new função/objeto()
+
+----------------------------------------------------------------
+API RESTfull
+    - É uma forma de arquitetura estrutural de dados, como por exemplo separação de cliente e servidor.
+    - Stateless, sem estado, cada requisição deve ter o minimo necessário apra o servidor entender as informações, o servidor não armazena estados.
+    - Layered System, desenvolvimento em camadas, cliente acessa um endpoint sem precisar saber a sua implementação.

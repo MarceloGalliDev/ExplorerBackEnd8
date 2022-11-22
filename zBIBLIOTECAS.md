@@ -34,3 +34,11 @@
 >> MULTER
     - npm install multer
     - usado para uploads de arquivos
+
+>> CORS
+    - npm install cors
+    - habilitar back end com o front
+
+>> AXIOS
+    - npm install axios
+    - para consumir o back-end
