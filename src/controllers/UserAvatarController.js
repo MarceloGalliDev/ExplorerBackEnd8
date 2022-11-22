@@ -19,7 +19,7 @@ class UserAvatarController {
             await diskStorage.deleteFile(user.avatar);//aqui estamos atualizando o estado da coluna avatar da tabela user
         }
 
-        const filename = await diskStorage.saveFile(avatarFilename);
+        const filename = await diskStorage.saveFile(avatarFilename);//aqui estamos salvando o arquivo avatar recebido pelo request.file.filename e salvando dentro da coluna user.avatar
         user.avatar = filename;
 
         await knex("users").update(user).where({ id: user_id });//aqui estamos atualizando a tabela user, somente onde o id se coincide, caso não tenha o where ele atualizará toda a table
