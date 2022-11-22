@@ -137,3 +137,6 @@ FUNÇÃO FILTER
 ----------------------------------------------------------------
 FUNÇÃO resolve(__dirname, "..", "tmp");
     - Usado para resolver o caminho do path da past, usamos __dirname para diretório e "..", para subir um nível na pasta, "tmp" é o nome da pasta que eu busco
+
+INSTANCIANDO uma nova classe
+    - Quando vamos utilizar uma nova classe como objeto é necessário instanciarmos na renderização com um operador new função/objeto()
