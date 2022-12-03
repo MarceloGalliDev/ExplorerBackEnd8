@@ -146,3 +146,21 @@ API RESTfull
     - É uma forma de arquitetura estrutural de dados, como por exemplo separação de cliente e servidor.
     - Stateless, sem estado, cada requisição deve ter o minimo necessário apra o servidor entender as informações, o servidor não armazena estados.
     - Layered System, desenvolvimento em camadas, cliente acessa um endpoint sem precisar saber a sua implementação.
+
+----------------------------------------------------------------
+PM2
+    - É um gerenciador de processos que irá ajudar a gerenciar e manter a aplicação online 24h por dia, 7 dias por semana
+    - Start and Daemonize any application:
+                $ pm2 start app.js
+
+                Load Balance 4 instances of api.js:
+                $ pm2 start api.js -i 4
+
+                Monitor in production:
+                $ pm2 monitor
+
+                Make pm2 auto-boot at server restart:
+                $ pm2 startup
+
+                To go further checkout:
+                http://pm2.io/

@@ -46,3 +46,8 @@
 >>DOTENV
     - npm install dotenv --save
     - para criar variáveis de ambiente
+
+>>PM2
+    - pm2 init
+    - para rodar os servidor 24h 7d.
+    - npm install pm2
