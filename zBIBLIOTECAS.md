@@ -42,3 +42,7 @@
 >> AXIOS
     - npm install axios
     - para consumir o back-end
+
+>>DOTENV
+    - npm install dotenv --save
+    - para criar variáveis de ambiente
