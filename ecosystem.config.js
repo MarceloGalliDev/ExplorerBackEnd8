@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    name: "RocketNotes - backend",
+    name: "app",
     script: "./src/server.js",
     instances: "max",
     env: {
