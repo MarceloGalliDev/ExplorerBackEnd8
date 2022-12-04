@@ -164,3 +164,7 @@ PM2
 
                 To go further checkout:
                 http://pm2.io/
+
+----------------------------------------------------------------
+RENDER ou RAILWAY
+    - Hospedar aplicação, de forma gratuita
