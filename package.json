@@ -20,6 +20,14 @@
     "@types/multer": "^1.4.7",
     "nodemon": "^2.0.20"
   },
+  "name": "rocketnotes-backend",
+  "version": "1.0.0",
+  "description": "rocketnotes backend",
+  "main": "server.js",
+  "repository": "https://github.com/MarceloGalliDev/RocketNotes-Backend",
+  "author": "Galli Brothers Inc",
+  "license": "MIT",
+  "private": false,
   "scripts": {
     "start": "pm2-runtime start ecosystem.config.js --env production",
     "dev": "nodemon ./src/server.js",
