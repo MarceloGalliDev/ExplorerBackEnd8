@@ -51,3 +51,15 @@
     - pm2 init
     - para rodar os servidor 24h 7d.
     - npm install pm2
+
+>>JEST
+    - npm install --save-dev jest
+    - para realizar testes
+    - npx jest --init
+        - Y, para adicionar um script de teste no package.json
+        - N, se caso não usr o typescript
+        - NODE
+        - N
+        - V8, mecanismo de teste
+        - S, limpeza de mocks e instancias
+    - sempre que executado, será como se fosse a primeira vez
