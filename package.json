@@ -28,6 +28,9 @@
   "author": "Galli Brothers Inc",
   "license": "MIT",
   "private": false,
+  "engines": {
+    "node": ">=14 <17"
+  },
   "scripts": {
     "start": "pm2-runtime start ecosystem.config.js --env production",
     "dev": "nodemon ./src/server.js",
